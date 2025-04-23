@@ -14,10 +14,9 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
-    background-color: #ffffff;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    padding: 16px 112px 16px 112px;
     position: relative;
+    
   }
   
   .logo {
@@ -34,8 +33,8 @@
 
   .logobg {
     background: linear-gradient(to right, white, rgb(83, 0, 128));
-    padding: 0px 8px; /* More padding on X-axis */
-    border-radius: 15px; /* Almost-rounded, pill-like shape */
+    padding: 0px 8px; 
+    border-radius: 15px; 
    
     align-items: center;
     justify-content: center;
@@ -45,16 +44,19 @@
   }
   
   
-  .navbar ul {
+  .navbar ul  {
     list-style: none;
     display: flex;
     gap: 20px;
+    font-weight: bolder;
   }
+    
+
   
   .navbar a {
     text-decoration: none;
-    color: #333;
-    font-weight: 500;
+    color: #494747;
+    font-weight: 700;
   }
   
   .auth-buttons {
@@ -65,21 +67,113 @@
   .btn {
     padding: 8px 16px;
     border: none;
-    background-color: #4CAF50;
+    background-color: #4F46E5;
     color: white;
     cursor: pointer;
     border-radius: 4px;
   }
   
   .signup {
-    background-color: #2196F3;
+    border: #949494 solid 1px;
+    padding: 12px 20px 12px 20px;
+    border-radius: 1234px;
+    font-weight: 700;
+    font-size: 16px;
   }
   
+
+  .login{
+    font-weight: 700;
+    font-size: 16px;
+    padding: 12px 20px 12px 20px;
+    border-radius: 1234px;
+  }
+
   /* Hamburger styles */
   .hamburger {
     display: none;
     font-size: 1.8rem;
     cursor: pointer;
+  }
+
+  .banner {
+    height: 1222px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../assets/images/banner-bg.jpg');
+   display: flex;
+   flex-direction: column;
+   position: relative;
+  }
+
+  .banner-content {
+    max-width: 800px;
+    text-align: center;
+  }
+
+  .heading-para {
+    color: #3b82f6;
+    font-weight: 600;
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+  }
+
+  .heading h1 {
+    font-size: 2.8rem;
+    font-weight: 800;
+    margin-bottom: 20px;
+    color: #111827;
+  }
+
+  .heading p {
+    font-size: 1rem;
+    color: #4b5563;
+    margin-bottom: 30px;
+    padding: 0 10px;
+  }
+
+  .stores {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .stores img {
+    width: 160px;
+    height: auto;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .stores img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  }
+
+  /* Banner dashboard section */
+.banner-dashboard {
+  position: relative;
+  width: 800px;
+  height: 533.33px;
+}
+
+  .largedash{
+    height: 533.33px;
+    width: 800px;
+    border: #ffffff 1px solid;
+    border-radius: 15px;
+  }
+   
+  .smalldash{
+    position: absolute;
+z-index: 10;
+    height: 467.85px;
+    width: 230px;
+    margin-top: 132px;
+    margin-left: 756.41px;
+    top: 132px; 
   }
   
   /* Mobile responsive */
@@ -111,6 +205,14 @@
   
     .navbar.active {
       display: block;
+    }
+
+    .heading h1 {
+      font-size: 2rem;
+    }
+
+    .stores img {
+      width: 140px;
     }
   }
   
