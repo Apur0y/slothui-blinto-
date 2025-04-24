@@ -127,10 +127,16 @@
   }
 
   .heading-para {
-    color: #3b82f6;
+    color: #4F46E5;
     font-weight: 600;
     font-size: 1.1rem;
     margin-bottom: 10px;
+    background-color:  #d2e2ff;
+    padding: 5px 10px;
+    border: #d2e2ff solid 1px;
+    border-radius: 15px;
+    
+    
   }
 
   .heading h1 {
@@ -141,8 +147,7 @@
   }
 
   .heading p {
-    font-size: 1rem;
-    color: #4b5563;
+ 
     margin-bottom: 30px;
     padding: 0 10px;
   }
@@ -202,6 +207,7 @@
     align-items: center;
     flex-direction: column;
     padding: 64px 112px 64px 112px;
+    background-color: rgb(245, 250, 255);
   }
 
   .company-logo-row-one{
@@ -221,6 +227,76 @@
     padding: 20px 30px;
     width: 976px;
     height: 96px;
+  }
+
+  .feature-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 96px 112px 96px 112px;
+    flex-direction: column;
+    gap: 64px;
+   
+  }
+
+  .feature-text{
+    width: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    text-align: center;
+  }
+
+  .para-20{
+    color: #475569;
+    font-size: 20px;
+  }
+  .para-18{
+    color: #475569;
+    font-size: 18px;
+  }
+  .para-16{
+    color: #475569;
+    font-size: 16px;
+  }
+
+  .feature-head{
+    font-weight: 800;
+    font-size: 36px;
+  }
+
+  .lazy-efficient{
+    width: 384px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .lazy-efficient p{
+    text-align: center;
+  }
+
+  .lazy-efficient h3{
+    font-weight: 700;
+    font-size: 20px;
+  }
+
+  .features-card{
+    display: flex;
+ flex-direction: column;
+ gap: 48px;
+
+  }
+
+  .feature-row-one{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 48px;
+    width: 1216px;
   }
   
   /* Mobile responsive */
