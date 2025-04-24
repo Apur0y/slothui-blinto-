@@ -361,30 +361,87 @@ body {
     gap:24px
   }
 
-  .what-info{
-
+  .what-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px; /* Optional: spacing between left and right */
   }
-
-  .what-info-left-para{
+  
+  .what-info-left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+  .what-info-left-para {
     font-weight: 700;
+    margin-bottom: 12px;
   }
 
-  .what-info-right-para{
-    
+  .what-para-left{
+    width: 468px;
   }
-
-  .what-image{
-    width: 364.23px;
-    height: 740.89p;
+  
+  /* Image Container: clipping the rotated image */
+  .what-info-right {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* hides the rotated part outside */
+    width: 400px; /* Adjust as needed */
+    height: 600px; /* Adjust as needed */
+    position: relative;
+    clip-path: inset(0);
+    border-radius: 30px; /* Ensures only center is visible */
   }
-
-  .what-image-container{
+  
+  .what-image-container {
     rotate: -30deg;
     display: flex;
-    gap:30px;
-    width: 776px;
-    height: 932.12px;
+    gap: 30px;
+    position: absolute;
+    background-color: #c5c3fd;
+    border: 1px solid #c5c3fd;
+    border-radius: 20px;
+    padding: 60px;
+    
   }
+  
+  /* Image sizing (fixing typo in height) */
+  .what-image {
+    width: 364.23px;
+    height: 740.89px; /* fixed typo: was 740.89p */
+    object-fit: cover;
+  }
+
+  .divider-3{
+    width: 5px;
+    height: 156px;
+    background-color: #3b45ff;
+    border-radius: 15px;
+  }
+  .divider-4{
+    width: 5px;
+    height: 156px;
+    background-color: #c8caff;
+    border-radius: 15px;
+  }
+
+  
+  .divider-flex{
+    display: flex;
+    gap:24px;
+  }
+
+  .what-info-left-para-all{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
 
   /* Mobile responsive fvsdddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd*/
   @media (max-width: 768px) {
