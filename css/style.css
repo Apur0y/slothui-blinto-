@@ -211,9 +211,10 @@
   }
 
   .company-logo-row-one{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(6 , 1fr);
+    /* justify-content: space-between;
+    align-items: center; */
     padding: 20px 30px;
     width: 1184px;
     height: 96px;
@@ -221,9 +222,9 @@
   }
 
   .company-logo-row-two{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(5 , 1fr);
+  
     padding: 20px 30px;
     width: 976px;
     height: 96px;
@@ -285,10 +286,10 @@
   }
 
   .features-card{
-    display: flex;
- flex-direction: column;
- gap: 48px;
-
+ display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 48px;
+   
   }
 
   .feature-row-one{
@@ -337,5 +338,76 @@
     .stores img {
       width: 140px;
     }
+
+    .features-card{
+      display: grid;
+         grid-template-columns: repeat(1, 1fr);
+         gap: 48px;
+        
+       }
+    .feature-text{
+      width: 343px;
+    }
+    .feature-text h2{
+      font-size: 30px;
+    }
+    .feature-text p{
+      font-size: 18px;
+    }
+
+    .company-logo{
+      width: 343px;
+    }
+
+    .company-logo-row-one{
+      display: grid;
+      grid-template-columns: repeat(3 , 1fr);
+   
+      width: 343px;
+    
+     
   }
-  
+    .company-logo-row-two{
+      display: grid;
+      grid-template-columns: repeat(3 , 1fr);
+      margin-top: 80px;
+     
+    width: 343px;
+    height: 96px;
+     
+  }
+
+.banner{
+width: 343px;
+}
+.banner-inner{
+  width: 343px;
+  height: 1030px;
+}
+.banner-content
+{
+  width: 343px;
+  height: 300px;
+  margin-left: 0px;
+}
+
+.banner-dashboard{
+  width: 343px;
+  height: 533.33px;
+  padding-left: 0px;
+  margin-top: 20px;
+}
+
+.largedash{
+  width: 343px;
+  height: 228.67px;
+  margin-left: 0px;
+}
+
+.smalldash{
+  width: 87.02px;
+  height: 177px;
+  margin-left: 220px;
+  top: 118px;
+}
+}
