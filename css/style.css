@@ -453,6 +453,39 @@ body {
   .what-info-right-min{
    display: none;
   }
+
+  .flex{
+    display: flex;
+  }
+  .justify{
+    justify-content: center;
+  }
+  .align{
+    align-items: center;
+  }
+  .none{
+    display: none;
+  }
+  .column{
+    flex-direction: column;
+  }
+  .row{
+    flex-direction: row;
+  }
+
+  .cards-width-max{
+    width: 384px;
+    display: flex;
+    gap:24px;
+    margin-top: 64px;
+
+  }
+
+  .avater-image{
+    width: 48px;
+    height: 48px;
+    border-radius: 100%;
+  }
   
 
   /* Mobile responsive fvsdddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd*/
