@@ -365,7 +365,8 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 40px; /* Optional: spacing between left and right */
+    gap: 40px;
+     
   }
   
   .what-info-left {
@@ -384,18 +385,18 @@ body {
     width: 468px;
   }
   
-  /* Image Container: clipping the rotated image */
+
   .what-info-right {
     flex: 1;
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow: hidden; /* hides the rotated part outside */
-    width: 400px; /* Adjust as needed */
-    height: 600px; /* Adjust as needed */
+    overflow: hidden;
+    width: 400px; 
+    height: 600px; 
     position: relative;
     clip-path: inset(0);
-    border-radius: 30px; /* Ensures only center is visible */
+    border-radius: 30px; 
   }
   
   .what-image-container {
@@ -410,11 +411,18 @@ body {
     
   }
   
-  /* Image sizing (fixing typo in height) */
+
   .what-image {
     width: 364.23px;
-    height: 740.89px; /* fixed typo: was 740.89p */
+    height: 740.89px;
     object-fit: cover;
+    border-radius: 20px;
+  }
+  .what-image-min {
+    width: 182.12px;
+    height: 370px;
+    object-fit: cover;
+    border-radius: 20px;
   }
 
   .divider-3{
@@ -440,6 +448,10 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
+  }
+
+  .what-info-right-min{
+   display: none;
   }
   
 
@@ -614,4 +626,37 @@ width: 100;
   gap:40px
 
 }
+
+.what-image-container{
+  display: flex;
+  rotate:0deg;
+  padding: 10px;
+  overflow: hidden;
+  width: 343px;
+    
+}
+
+.what-min-image{
+  rotate: -30deg;
+  display: flex;
+  gap:20px
+}
+.what-info-left-para-all{
+  width: 335px;
+}
+
+.what-info-right-min{
+  display: flex;
+
+}
+.what-info-right{
+  display: none;
+}
+
+.what-para-left{
+  width: 335px;}
+
+  .divider-flex{
+    gap:5px;
+  }
 }
