@@ -24,6 +24,7 @@ document.addEventListener('DOMContentLoaded', () => {
     {
       name: "Taylor Swift",
       designation: "Singer & Songwriter",
+      info: "Taylor Alison Swift is an American singer-songwriter. Her discography spans multiple genres, and her narrative songwriting, which often draws from her personal life, has received widespread critical praise and media coverage.",
       getRating: function () {
         const container = document.createElement("div");
         container.innerHTML = `
@@ -45,13 +46,10 @@ document.addEventListener('DOMContentLoaded', () => {
   people.forEach(person => {
     const card = document.createElement("div");
     card.classList.add("cards-width-max", "column");
-  
-    const rating = document.createElement("p");
-    rating.textContent = "Rating";
-  
+
     const info = document.createElement("p");
     info.classList.add("para-18");
-    info.textContent = "Info";
+    info.textContent = person.info || "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.";
   
     const flexBox = document.createElement("div");
     flexBox.classList.add("flex");
@@ -77,12 +75,11 @@ document.addEventListener('DOMContentLoaded', () => {
   
     flexBox.appendChild(img);
     flexBox.appendChild(textBox);
-  
-    card.appendChild(rating);
+
+    card.appendChild(ratingSvg);
     card.appendChild(info);
     card.appendChild(flexBox);
-    card.appendChild(ratingSvg);
-  
+    
     container.appendChild(card);
   });
   
