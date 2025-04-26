@@ -361,10 +361,23 @@ const questions = [
 
 const questionContainer = document.getElementById("questions");
 
+
 questions.forEach((question) => {
 
   const questionCard = document.createElement("div");
   questionCard.classList.add("question-card", "column");
+
+  const questionIcon = document.createElement("p");
+  questionText.classList.add("question-head");
+  questionText.textContent = function () {
+    const container = document.createElement("div");
+
+    container.innerHTML = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+
+</svg>
+`;
+    return container;
+  } ;
 
   const questionText = document.createElement("p");
   questionText.classList.add("question-head");
@@ -375,7 +388,8 @@ questions.forEach((question) => {
   answerText.textContent =
     question.answer ||
     "";
-
+  
+    questionCard.appendChild(questionIcon);
   questionCard.appendChild(questionText);
   questionCard.appendChild(answerText);
 
