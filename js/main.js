@@ -334,3 +334,51 @@ locations.forEach((location) => {
 
   locationContainer.appendChild(locationCard);
 });
+
+
+//Questions sections (FAQ)
+
+const questions = [
+  {
+    question:"Enim sed faucibus turpis in eu mi bibendum neque egestas?",
+    icon:""
+  },
+  {
+    question:"Amet consectetur adipiscing elit pellentesque habitant morbi tristique?"
+  },
+  {
+    question:"Elit pellentesque habitant morbi tristique senectus?",
+    answer:"Mattis ullamcorper velit sed ullamcorper morbi tincidunt. In metus vulputate eu scelerisque felis imperdiet proin fermentum leo. Diam quis enim lobortis scelerisque fermentum dui faucibus. Urna nunc id cursus metus aliquam eleifend mi. Gravida quis blandit turpis cursus in hac."
+  },
+  {
+    question:"Gravida quis blandit turpis cursus in hac. Mi ipsum faucibus vitae aliquet nec?"
+  },
+  {
+    question:"Est pellentesque elit ullamcorper dignissim cras. In pellentesque massa placerat?"
+  }
+];
+
+
+const questionContainer = document.getElementById("questions");
+
+questions.forEach((question) => {
+
+  const questionCard = document.createElement("div");
+  questionCard.classList.add("question-card", "column");
+
+  const questionText = document.createElement("p");
+  questionText.classList.add("question-head");
+  questionText.textContent = question.question;
+
+  const answerText = document.createElement("p");
+  answerText.classList.add("para-16", "answer-text");
+  answerText.textContent =
+    question.answer ||
+    "";
+
+  questionCard.appendChild(questionText);
+  questionCard.appendChild(answerText);
+
+  questionContainer.appendChild(questionCard);
+
+})
