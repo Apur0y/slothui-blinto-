@@ -276,6 +276,7 @@ body {
   .feature-head{
     font-weight: 800;
     font-size: 36px;
+    color: #1E293B;
   }
 
   .lazy-efficient{
@@ -297,9 +298,11 @@ body {
   }
 
   .features-card{
- display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 48px;
+display: flex;
+flex-wrap: wrap;
+gap:48px;
+justify-content: center;
+align-items: center;
    
   }
 
