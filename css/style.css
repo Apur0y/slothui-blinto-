@@ -591,6 +591,39 @@ padding: 16px;
     display: flex;
     justify-content: space-between
   } */
+.learn-more{
+
+  color: #4F46E5;
+  border: #3b45ff 1px solid;
+  font-weight: 700;
+
+}
+
+.padding-download{
+  padding: 64px 112px 64px 112px;
+  max-height: 653px;
+}
+
+.download-image{
+  width: 354.4px;
+  height: 721px;
+  border-radius: 30px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
   /* Mobile responsive fvsdddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd*/
   @media (max-width: 768px) {
 
