@@ -650,6 +650,9 @@ padding: 16px;
   right: -20px;
 }
 
+.min-download-image{
+  display: none;
+}
 
 
 
@@ -967,7 +970,40 @@ width: 100;
   display: none;
 }
 
+.min-download-image{
+display: flex;
+  width: 145px;
+  height: 315px;
+  border-radius: 20px;
+ border:#c5c3fd 3px solid;
 
+}
+
+.min-download-container{
+  display: flex;
+  gap:19px;
+  position: relative;
+  background-color: #EEF2FF;
+  width: 375px;
+}
+/* .download-container{
+  height: 343px;
+  background-color: #EEF2FF;
+  overflow: hidden;
+  display: flex;
+  position: relative;
+} */
+
+.net-min{
+  position: absolute;
+  right: 30px;
+  bottom: 90px;
+}
+
+.graph-min{
+  margin-left: 20px;
+  padding-bottom: 40px;
+}
 
 
 }
