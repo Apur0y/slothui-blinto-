@@ -587,6 +587,10 @@ padding: 16px;
     margin-top: 16px;
   }
 
+  /* .top-side{
+    display: flex;
+    justify-content: space-between
+  } */
   /* Mobile responsive fvsdddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd*/
   @media (max-width: 768px) {
 
