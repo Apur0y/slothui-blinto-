@@ -582,6 +582,11 @@ padding: 16px;
     gap: 16px;
   }
 
+  .answer-text{
+ 
+    margin-top: 16px;
+  }
+
   /* Mobile responsive fvsdddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd*/
   @media (max-width: 768px) {
 
@@ -849,6 +854,12 @@ width: 100;
     height: 1px;
     background-color: #ccc;
   }
+
+  /* .answer-text{
+    width: 275px;
+    margin-top: 16px;
+  } */
+
 
 
 }
