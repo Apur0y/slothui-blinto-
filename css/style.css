@@ -220,7 +220,7 @@ body {
 }
 .logo-container{
   display: flex;
-
+ gap:32px;
   flex-wrap: wrap;
 }
 
@@ -808,7 +808,8 @@ padding: 16px;
     }
 
     .company-logo{
-      width: 343px;
+      padding: 0;
+      margin-bottom: 30px;
     }
 
     .company-logo-row-one{
