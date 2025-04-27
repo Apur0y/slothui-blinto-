@@ -213,6 +213,18 @@ body {
   z-index: 10;
 }
 
+.single-logo {
+  padding: 10px;
+  background-color: white;
+  border-radius: 10px;
+}
+.logo-container{
+  display: flex;
+
+  flex-wrap: wrap;
+}
+
+
   .company-logo{
     display: flex;
     justify-content: center;
@@ -860,6 +872,10 @@ padding: 0px;
   height: 177px;
   margin-left: 220px;
   top: 118px;
+}
+
+.card-container {
+ width: 343px;
 }
 
 .stat{
