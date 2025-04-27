@@ -612,9 +612,11 @@ padding: 16px;
 }
 
 .download-image{
-  width: 354.4px;
-  height: 721px;
+  width: 318px;
+  height: 690px;
   border-radius: 30px;
+  border:5px solid #e3e3e3;
+  
 
 }
 
@@ -645,7 +647,7 @@ padding: 16px;
 .state-image {
   position: absolute;
   bottom: 60px;
-  right: -90px;
+  right: -20px;
 }
 
 
@@ -932,10 +934,39 @@ width: 100;
     background-color: #ccc;
   }
 
-  /* .answer-text{
-    width: 275px;
-    margin-top: 16px;
-  } */
+  .question-card{
+    padding: 0px;
+  }
+
+  .state-image {
+   display: none;
+  }
+
+
+.download-leftside{
+  width: 343px;
+  display: flex;
+  gap:24px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.download-leftside-para{
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.download-leftside-button{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap:12px;
+}
+.graph-image{
+  display: none;
+}
+
 
 
 
