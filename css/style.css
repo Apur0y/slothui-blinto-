@@ -58,13 +58,14 @@ body {
 }
 
 .logobg {
-  background: linear-gradient(to right, white, rgb(83, 0, 128));
-  padding: 0px 8px;
+  background: linear-gradient(to right, white, #4F46E5, #A5B4FC);
+  
+ text-align: center;
   border-radius: 15px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  font-weight: bold;
+  font-weight: bolder;
   color: white;
 }
 
@@ -122,8 +123,8 @@ body {
   display: flex;
   justify-content: center;
   background-image: url('../assets/images/banner-bg.jpg');
-  background-size: cover;
-  background-position: center;
+
+
   padding: 60px 16px;
 }
 
