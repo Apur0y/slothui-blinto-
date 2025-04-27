@@ -601,7 +601,14 @@ padding: 16px;
 
 .padding-download{
   padding: 64px 112px 64px 112px;
-  max-height: 653px;
+}
+
+.download-container{
+  height: 653px;
+  background-color: #EEF2FF;
+  overflow: hidden;
+  display: flex;
+  position: relative;
 }
 
 .download-image{
@@ -611,7 +618,35 @@ padding: 16px;
 
 }
 
+.download-main{
+  display: flex;
+  gap:96px
+  
+}
 
+.download-leftside{
+  width: 560px;
+  display: flex;
+  gap:48px;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.download-leftside-para{
+  font-weight: 700;
+}
+
+.download-rightside{
+  display: flex;
+ 
+  gap:34px
+}
+
+.state-image {
+  position: absolute;
+  bottom: 60px;
+  right: -90px;
+}
 
 
 
@@ -885,6 +920,11 @@ width: 100;
   .questions-main{
     padding: 64px 16px 64px 16px;
   }
+
+  .padding-download{
+    padding: 64px 16px 64px 16px;
+  }
+  
   
   .divider-5{
     width: 343px;
